@@ -1,0 +1,31 @@
+/* Write your global styles here */
+body {
+  font-family: sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #55595c;
+  padding: 0.75rem !important;
+  line-height: 1.5;
+}
+
+table[range-selection] {
+  cursor: cell;
+}
+
+table[range-selection] th,
+table[range-selection] td,
+table[range-selection] th > *,
+table[range-selection] td > * {
+  user-select: none !important;
+}
+
+.state--selected {
+  border: 1px double #2196f3;
+  background-color: rgba(33, 150, 243, 0.2) !important;
+}
